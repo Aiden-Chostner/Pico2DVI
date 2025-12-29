@@ -10,7 +10,7 @@ A couple of months ago, I began exploring circuit design, and I liked the idea o
 * Wifi 2.4 GHz
 
 ## Schematic
-![alt text](schematic.png)
+![alt text](images/schematic.png)
 
 ## PCB
-![alt text](pcb.png)
+![alt text](images/pcb.png)
