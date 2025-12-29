@@ -14,3 +14,25 @@ A couple of months ago, I began exploring circuit design, and I liked the idea o
 
 ## PCB
 ![alt text](images/pcb.png)
+
+## Subzero Cooler
+![alt text](images/subzero_cooler.png)
+
+## Memory
+![alt text](images/pcb.png)
+
+# Projects!
+## Hello World
+![alt text](images/pcb.png)
+
+## Conway's Game of Life
+![alt text](images/pcb.png)
+
+## Ray Tracing
+![alt text](images/pcb.png)
+
+## Doom
+![alt text](images/pcb.png)
+
+## Future
+![alt text](images/pcb.png)
