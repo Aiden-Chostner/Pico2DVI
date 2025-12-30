@@ -12,6 +12,11 @@ A couple of months ago, I began exploring circuit design, and I liked the idea o
 * Subzero Cooler
 * Wifi 2.4 GHz
 
+## If you want to build it, I have an instructables page!
+[Instructions](https://google.com)
+
+# WIP
+
 ## Schematic
 ![alt text](images/schematic.png)
 
@@ -45,10 +50,7 @@ The protocol the memory chips use is called SPI. (Serial Peripheral Interface) E
 ## Conway's Game of Life
 ![alt text](images/pcb.png)
 
-## Ray Tracing
-![alt text](images/pcb.png)
-
-## Doom
+## Tetris
 ![alt text](images/pcb.png)
 
 ## Future
