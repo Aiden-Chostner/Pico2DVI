@@ -9,3 +9,6 @@
 9.Click install all
 10.Go to Pico2DVI/Config and copy common_dvi_pin_configs.h
 Paste into c:/Users/YourUsername/Documents/Arduino/libraries/PicoDVI_-_Adafruit_Fork/software/include Click Replace the File in the Destination
+
+Example folder has a template with instructions on how to program the graphics card.
+To upload code on the graphics card, press down the boot select button. Plug it into your computer, then release the button. Before every time you upload code, first unplug the graphics card and repeat the process.
