@@ -38,9 +38,6 @@ For HDMI to work properly the Raspberry Pi needs to be overclocked. This generat
 ### Bitbanging
 The protocol the memory chips use is called SPI. (Serial Peripheral Interface) Each chip uses four wires on a shared bus with every other chip, which saves valuable GPIO pins from the Raspberry Pi. I decided to bitbang the signals and code them manually. Each instruction, like reading or writing, has a different timing diagram like the one above. I made a function that had modular instructions so I did not have to manually code each one.
 
-## Extra Features
-![alt text](images/buttons.jpg)
-
 # Projects!
 ## Hello World
 ![alt text](images/pcb.png)
