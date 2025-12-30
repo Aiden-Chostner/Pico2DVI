@@ -46,12 +46,28 @@ The protocol the memory chips use is called SPI. (Serial Peripheral Interface) E
 # Projects!
 ## Hello World
 ![alt text](images/pcb.png)
+fingers crossed
+
+excited when i first got it working
+
+4 iterations
 
 ## Conway's Game of Life
 ![alt text](images/pcb.png)
+2 buffers
+
+indexing
 
 ## Tetris
 ![alt text](images/pcb.png)
+uses controls
+
+fun
 
 ## Future
 ![alt text](images/pcb.png)
+i want to try raytracing or ai models
+
+i have added a main file to add anything too w/ examples
+
+you can do anything
