@@ -2,6 +2,7 @@
 #include <Adafruit_GFX.h>
 #include <cmath>
 
+//initialize display at 16bpp 320x240 60fps
 DVIGFX16 display(DVI_RES_320x240p60, Pico2DVI_cfg);
 
 //pins
@@ -57,45 +58,10 @@ const int gray2 = 0x8410;
 const int gray3 = 0xC618;
 const int white = 0xFFFF;
 
+//game buffers
 bool buffer0[320*240];
 bool buffer1[320*240];
 
-/* EXAMPLES
-display
-
-display.fillScreen(color);
-display.width()
-display.height()
-
-text
-display.setTextColor(color);
-display.setTextSize(s);
-display.print(text, color);
-display.println(text, color);
-
-shapes
-display.drawPixel(int, int, color);
-display.drawLine(x0, y0, x1, y1, color);
-display.drawTriangle(x0, y0, x1, y1, x2, y2, color);
-display.fillTriangle(x0, y0, x1, y1, x2, y2, color);
-display.drawRect(x, y, width, height, color);
-display.fillRect(x, y, width, height, color);
-display.drawCircle(x0, y0, r, color);
-display.fillCircle(x0, y0, r, color);
-
-SPI instructions
-SPIM(chipRandom(chip), type, instruction, address, data)
-
-SPIM(chip, 1, 0x83, 0x00000(0-4), 0) returns identity 0x20, 0x00, 0x16, 0x00, or 0xFF
-SPIM(chipRandom(chip), 0, 0x06, 0, 0); enables write
-
-chip erase
-SPIM(chipRandom(chip), 3, 0xC7, 0, 0); 32-Mbit/15 ms USE MINIMALLY BECAUSE ONLY 100 CYCLES
-
-read/write
-SPIM(chipRandom(chip), 2, 0x02, addressRandom(address), data); byte/2 ms
-SPIM(chipRandom(chip), 1, 0x03, addressRandom(address), 0) read byte
-*/
 void setup() {
   display.begin();
 
@@ -250,6 +216,8 @@ void render(unsigned long currentTime) {
     for (int x = 0; x < display.width(); x++) {
       if (!(x < 170 && y < 66)) { //draw every pixel except on overlay to prevent flickering
         int index = y*320+x;
+
+        //game calculation
         int neighbors = buffer0[index-321] + buffer0[index-320] + buffer0[index-319] + buffer0[index-1] + buffer0[index+1] + buffer0[index+319] + buffer0[index+320] + buffer0[index+321];
         if (neighbors<=1 || neighbors>=4) {
           buffer1[index] = 0;
@@ -265,6 +233,7 @@ void render(unsigned long currentTime) {
     }
   }
   
+  //swap screen buffer to secondary
   for (int i=0; i<240*320; i++) {
     buffer0[i] = buffer1[i];
   }

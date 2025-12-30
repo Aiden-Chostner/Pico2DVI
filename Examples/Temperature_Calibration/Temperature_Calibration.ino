@@ -2,8 +2,10 @@
 #include <Adafruit_GFX.h>
 #include <cmath>
 
+//initialize display 1bpp 640x480 60 fps no double buffer
 DVIGFX1 display(DVI_RES_640x480p60, false, Pico2DVI_cfg);
 
+//calibration
 float temp;
 float temp1 = 0;
 float temp2 = 0;

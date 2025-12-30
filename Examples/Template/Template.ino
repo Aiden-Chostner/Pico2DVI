@@ -2,6 +2,7 @@
 #include <Adafruit_GFX.h>
 #include <cmath>
 
+//initialize display 16bpp 320x240 60 fps
 DVIGFX16 display(DVI_RES_320x240p60, Pico2DVI_cfg);
 
 //pins
@@ -243,6 +244,10 @@ void render(unsigned long currentTime) {
     for (int x = 0; x < display.width(); x++) {
       if (!(x < 170 && y < 66)) { //draw every pixel except on overlay to prevent flickering
         int index = y*320+x;
+
+        //Add code here
+
+        //simple randomization writing to memory
         SPIM(MCS0, 0, 0x06, 0, 0);
         SPIM(MCS0, 2, 0x02, addressRandom(index), (uint8_t)get_rand_32());
         delay(2);
