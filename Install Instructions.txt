@@ -1,10 +1,10 @@
 1.Install Arduino IDE https://www.arduino.cc/en/software/
-2.In IDE go to File then Preferences
+2.In IDE go to File → Preferences
 3.Paste https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json into Additional Boards Manager
-4.Go to Tools then Board then Boards Manager
+4.Go to Tools → Board → Boards Manager
 5.Search for Raspberry Pi Pico/RP2040/RP2350
 6.Click Install
-7.Go to Tools then Manage Libraries
+7.Go to Tools → Manage Libraries
 8.Search for PicoDVI - Adafruit Fork
 9.Click install all
 10.Go to Pico2DVI/Config and copy common_dvi_pin_configs.h
