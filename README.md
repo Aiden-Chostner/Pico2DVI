@@ -46,7 +46,7 @@ The protocol the memory chips use is called SPI. (Serial Peripheral Interface) E
 
 # Projects!
 ## Hello World
-![alt text](images/pcb.png)
+![alt text](images/hello_world.JPG)
 fingers crossed
 
 excited when i first got it working
@@ -54,7 +54,7 @@ excited when i first got it working
 4 iterations
 
 ## Conway's Game of Life
-![alt text](images/pcb.png)
+![alt text](images/conway.JPG)
 2 buffers
 
 indexing
@@ -66,7 +66,7 @@ uses controls
 fun
 
 ## Future
-![alt text](images/pcb.png)
+![alt text](images/future.JPG)
 i want to try raytracing or ai models
 
 i have added a main file to add anything too w/ examples
