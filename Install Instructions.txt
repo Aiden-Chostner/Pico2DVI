@@ -1,5 +1,5 @@
-1.Install Arduino IDE https://www.arduino.cc/en/software/
-2.In IDE go to File → Preferences
+1.Install the Arduino IDE
+2.In the IDE go to File → Preferences
 3.Paste https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json into Additional Boards Manager
 4.Go to Tools → Board → Boards Manager
 5.Search for Raspberry Pi Pico/RP2040/RP2350
@@ -7,8 +7,6 @@
 7.Go to Tools → Manage Libraries
 8.Search for PicoDVI - Adafruit Fork
 9.Click install all
-10.Go to Pico2DVI/Config and copy common_dvi_pin_configs.h
-Paste into c:/Users/YourUsername/Documents/Arduino/libraries/PicoDVI_-_Adafruit_Fork/software/include Click Replace the File in the Destination
-
-Example folder has a template with instructions on how to program the graphics card.
-To upload code on the graphics card, press down the boot select button. Plug it into your computer, then release the button. Before every time you upload code, first unplug the graphics card and repeat the process.
+10.Download common_dvi_pin_configs.h
+11.Paste into c:/Users/YourUsername/Documents/Arduino/libraries/PicoDVI_-_Adafruit_Fork/software/include
+12.Click replace the file in the destination
