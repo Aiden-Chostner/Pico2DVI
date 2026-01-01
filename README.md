@@ -12,6 +12,8 @@ Recently, I began exploring circuit design, and I liked the idea of creating my 
 * Subzero Cooler
 * Wifi 2.4 GHz
 
+## If you want to build it, I have an [instructables page](https://www.instructables.com/Pico2DVI-the-Graphics-Card-You-Can-Build-Yourself/)!
+
 ## Schematic
 ![alt text](images/schematic.png)
 
